@@ -6,13 +6,14 @@
 	<title>Pink</title>
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header class="page-header">
-		<a class="page-header__logo">
-			<img class="page-header__logo-image" src="img/logotype-mobile.svg" width="" height="" alt="Pink app">
-		</a>
-		<nav class="main-nav">
+		<nav class="main-nav main-nav--closed">
+			<a class="page-header__logo">
+				<img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="25" alt="Pink app">
+			</a>
 			<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 			<ul class="main-nav__list site-list">
 				<li class="site-list__item site-list__item--active"><a>Главная</a></li>
@@ -22,14 +23,16 @@
 			</ul>
 		</nav>
 		<div class="download">
-			<b class="download__slogan">Взгляните на жизнь иначе!</b>
-			<a href="#" class="download__button">Скачать приложение</a>
-			<ul class="download-list">
-				<li class="download-list__item"><a href="#"><img src="#"></a></li>
-				<li class="download-list__item"><a href="#"><img src="#"></a></li>
-				<li class="download-list__item"><a href="#"><img src="#"></a></li>
-			</ul>
-			<p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+			<div class="download__wrapper">
+				<b class="no-mobile download__slogan">Взгляните на жизнь иначе!</b>
+				<a href="#" class="download__button">Скачать приложение</a>
+				<ul class="download-list">
+					<li class="download-list__item"><a href="#"><img src="img/apple.svg" width="47" height="56" alt="apple logo"></a></li>
+					<li class="download-list__item"><a href="#"><img src="img/android.svg" width="43" height="47" alt="android logo"></a></li>
+					<li class="download-list__item"><a href="#"><img src="img/microsoft.svg" width="44" height="41" alt="microsoft logo"></a></li>
+				</ul>
+				<p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+			</div>
 		</div>
 	</header>
 
@@ -55,7 +58,7 @@
 					<p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
 				</li>
 			</ul>
-			<div class="features-effect">
+			<div class="no-mobile features-effect">
 				<h3 class="features-effect__title">Эффект на 24 часа!</h3>
 				<p class="features-effect__item">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
 				<a href="#" class="features-effect__link">Узнать больше об исследовании</a>
@@ -94,55 +97,56 @@
 			<h2 class="visually-hidden">Цены на тарифы</h2>
 			<table class="price__table">
 				<th class="price__desk--none"></th>
-				<th>База<br>1,99 usd</th>
-				<th>Стандарт<br>3,99 usd</th>
-				<th>Анлим<br>9,99 usd</th>
+				<th><b>База</b><br><span>1,99 usd</span></th>
+				<th><b>Стандарт</b><br><span>3,99 usd</span></th>
+				<th><b>Анлим</b><br><span>9,99 usd</span></th>
 				<tr>
 					<td>Розовый фильтр</td>
-					<td><span class="price__value">Розовый фильтр</span><img src="#"></td>
-					<td><span class="price__value">Розовый фильтр</span><img src="#"></td>
-					<td><span class="price__value">Розовый фильтр</span><img src="#"></td>
+					<td><span class="price__value--yes">Розовый фильтр</span></td>
+					<td><span class="price__value--yes">Розовый фильтр</span></td>
+					<td><span class="price__value--yes">Розовый фильтр</span></td>
 				</tr>
 				<tr>
 					<td>Смайлики</td>
-					<td><span class="price__value">Смайлики</span><img src="#"></td>
-					<td><span class="price__value">Смайлики</span><img src="#"></td>
-					<td><span class="price__value">Смайлики</span><img src="#"></td>
+					<td><span class="price__value--no">Смайлики</span></td>
+					<td><span class="price__value--yes">Смайлики</span></td>
+					<td><span class="price__value--yes">Смайлики</span></td>
 				</tr>
 				<tr>
 					<td>Комментарии</td>
-					<td><span class="price__value">Комментарии</span><img src="#"></td>
-					<td><span class="price__value">Комментарии</span><img src="#"></td>
-					<td><span class="price__value">Комментарии</span><img src="#"></td>
+					<td><span class="price__value--no">Комментарии</span></td>
+					<td><span class="price__value--no">Комментарии</span></td>
+					<td><span class="price__value--yes">Комментарии</span></td>
 				</tr>
 			</table>
 		</section>
-
-		<footer class="page-footer">
-			<section class="contact__information">
-				<h2 class="visually-hidden">Контактная информация</h2>
-				<p class="contact__title">Остались вопросы? Свяжитесь с нами!</p>
-				<ul class="contact-list">
-					<li class="contact-list__item"><b>Звоните:</b>+7 (812) 555-66-66</li>
-					<li class="contact-list__item"><b>Пишите:</b><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
-					<li class="contact-list__item"><b>Приезжайте в гости:</b><a href="https://yandex.ru/maps/-/CGDre896">ул. Большая Конюшенная, 19/8</a></li>
-				</ul>
-			</section>	
-			<section class="page-footer__map">
-				<iframe src="https://yandex.ru/map-widget/v1/-/CGDre896" width="auto" height="auto" allowfullscreen="true"></iframe>
-			</section>
-
-			<section class="footer-social">
-				<a class="footer-social__logo" href="#"><img src="#"></a>
-				<ul class="footer-social__list">
-					<li class="social__item"><a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a></li>
-					<li class="social__item"><a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">Мы в Фейсбуке</a></li>
-					<li class="social__item"><a class="social__link social__link--youtube" href="https://youtube.com/htmlacademy">Мы в Ютубе</a></li>
-				</ul>
-				<a href="https://htmlacademy.ru/">Разработано<img src="#"></a>
-			</section>
-		</footer>
-
 	</main>
+
+	<footer class="page-footer">
+		<section class="contact__information">
+			<h2 class="visually-hidden">Контактная информация</h2>
+			<p class="contact__title">Остались вопросы? Свяжитесь с нами!</p>
+			<ul class="contact-list">
+				<li class="contact-list__item"><b>Звоните:</b><p>+7 (812) 555-66-66</p></li>
+				<li class="contact-list__item"><b>Пишите:</b><p><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p></li>
+				<li class="contact-list__item"><b>Приезжайте в гости:</b><p><a href="https://yandex.ru/maps/-/CGDre896">ул. Большая Конюшенная, 19/8</a></p></li>
+			</ul>
+		</section>	
+		<section class="page-footer__map">
+			<iframe src="https://yandex.ru/map-widget/v1/-/CGDre896" width="auto" height="auto" allowfullscreen="true"></iframe>
+		</section>
+
+		<section class="no-mobile footer-social">
+			<a class="footer-social__logo" href="#"><img src="#"></a>
+			<ul class="footer-social__list">
+				<li class="social__item"><a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a></li>
+				<li class="social__item"><a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">Мы в Фейсбуке</a></li>
+				<li class="social__item"><a class="social__link social__link--youtube" href="https://youtube.com/htmlacademy">Мы в Ютубе</a></li>
+				</ul>
+			<a href="https://htmlacademy.ru/">Разработано<img src="#"></a>
+		</section>
+	</footer>
+
+	<script src="script.js"></script>
 </body>
 </html>
