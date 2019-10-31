@@ -174,7 +174,7 @@ img {
 					  url(img/back-mobile@1x.png);
 	background-repeat: no-repeat;
 	background-position: -1px 106px, center -70px;
-
+	background-size: auto, contain;
 	border-top: 1px solid transparent; 
 }
 
@@ -274,8 +274,7 @@ img {
 	background-image: url(img/features-bg.png);
 	background-position: center -43px;
 	background-repeat: no-repeat;
-
-	/*background-color: yellow;*/
+	background-size: cover;
 }
 
 .features-list::after {
