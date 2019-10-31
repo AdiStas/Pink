@@ -101,10 +101,6 @@ img {
 	border: none;
 }
 
-.main-nav--closed {
-	background-color: rgba(0, 0, 0, 0.3);
-}
-
 .main-nav--closed .main-nav__toggle::before {
 	content: "";
 
@@ -117,7 +113,7 @@ img {
 	height: 4px;
 
 	background-color: #fff;
-	box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
+	box-shadow: 0 10px 0 0 #fff, 0 20px 0 0 #fff;
 }
 
 .main-nav--opened .main-nav__toggle::before,
@@ -177,7 +173,7 @@ img {
 	background-image: url(img/iphone-hand.png), 
 					  url(img/back-mobile@1x.png);
 	background-repeat: no-repeat;
-	background-position: left 110px, center -65px;
+	background-position: -1px 106px, center -70px;
 
 	border-top: 1px solid transparent; 
 }
@@ -194,7 +190,7 @@ img {
 	display: block;
 
 	padding: 15px 36px 15px 36px;
-	margin-top: 8px;
+	margin-top: 5px;
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-bottom: 30px;
@@ -213,12 +209,14 @@ img {
 
 .download-list {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: baseline;
 
+	width: 210px;
+
 	padding: 0;
-	margin: 0;
-	margin-bottom: 25px;
+	margin: 0 auto;
+	margin-bottom: 20px;
 
 	list-style: none;
 }
@@ -226,8 +224,9 @@ img {
 .download__description {
 	color: #fff;
 
-	margin: 0;
-	padding-bottom: 25px;
+	width: 235px;
+	margin: 0 auto;
+	padding-bottom: 30px;
 
 	text-align: center;
 
@@ -240,29 +239,76 @@ img {
 
 /*features*/
 
+.features__slogan {
+	margin-top: 42px;
+	margin-bottom: 35px;
+}
+
 .features__item {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 32px;
+
 	text-align: center;
+
+	font-size: 24px;
+	line-height: auto;
+	font-weight: 300;
 }
 
 .features-list {
+	position: relative;
+
 	display: flex;
 	flex-direction: column;
 
 	margin: 0;
 	padding: 0;
+	padding-top: 81px;
+	padding-bottom: 330px;
 
 	list-style: none;
 
 	text-align: center;
+
+	background-image: url(img/features-bg.png);
+	background-position: center -43px;
+	background-repeat: no-repeat;
+
+	/*background-color: yellow;*/
+}
+
+.features-list::after {
+	position: absolute;
+
+	content: "";
+
+	top: 508px;
+    left: 82px;
+
+	background-image: url(img/iphone-screen.png);
+
+	width: 157px;
+	height: 320px;
+}
+
+.features-list__item {
+	margin-bottom: 30px;
+	padding: 0 20px;
 }
 
 .features__title {
+	margin: 0;
+	margin-bottom: 13px;
+
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: bold;
 }
 
 .features__description {
+	margin: 0;
+
 	font-size: 14px;
 	line-height: 24px;
 }
