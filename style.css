@@ -240,6 +240,10 @@ img {
 
 /*features*/
 
+.features {
+	
+}
+
 .features__slogan {
 	margin-top: 42px;
 	margin-bottom: 35px;
@@ -258,38 +262,23 @@ img {
 }
 
 .features-list {
-	position: relative;
-
 	display: flex;
 	flex-direction: column;
 
 	margin: 0;
 	padding: 0;
 	padding-top: 81px;
-	padding-bottom: 330px;
+	padding-bottom: 285px;
+
+	background-color: #f2f2f2;
+	background-image: url(img/iphone-screen.png),
+					  url(img/bg-triangle-white.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 110%, center -1px;
 
 	list-style: none;
 
 	text-align: center;
-
-	background-image: url(img/features-bg.png);
-	background-position: center -43px;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.features-list::after {
-	position: absolute;
-
-	content: "";
-
-	top: 508px;
-    left: 82px;
-
-	background-image: url(img/iphone-screen.png);
-
-	width: 157px;
-	height: 320px;
 }
 
 .features-list__item {
