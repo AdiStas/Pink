@@ -15,6 +15,7 @@ img {
 	height: auto;
 }
 
+.visually-hidden,
 .visually-hidden:not(:focus):not(:active) {
 	position: absolute;
 
@@ -241,7 +242,7 @@ img {
 /*features*/
 
 .features {
-	
+	margin-bottom: 45px;
 }
 
 .features__slogan {
@@ -303,6 +304,82 @@ img {
 }
 
 /*rewiews*/
+
+.reviews {
+	position: relative;
+
+	min-height: 310px;
+
+	text-align: center;
+}
+
+.reviews__container {
+	padding: 0 20px;
+}
+
+.slider__list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.slide {
+	display: none;
+}
+
+.slider__controls {
+	position: absolute;
+	top: 255px;
+    left: 40%;
+	z-index: 20;
+
+	font-size: 0;
+}
+
+.slider__controls label {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin-right: 8px;
+
+	vertical-align: top;
+
+	background-color: #bec2c7;
+	border: 2px solid transparent;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#product-1:checked ~ .reviews #slide1,
+#product-2:checked ~ .reviews #slide2,
+#product-3:checked ~ .reviews #slide3 {
+	display: block;
+}
+
+#product-1:checked ~ .reviews label[for="product-1"],
+#product-2:checked ~ .reviews label[for="product-2"],
+#product-3:checked ~ .reviews label[for="product-3"] {
+	background-color: #fff;
+	border: 2px solid #000;
+}
+
+.reviews__item {
+	margin: 0;
+	padding: 0;
+}
+
+.reviews__author-name {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.reviews__text {
+	font-size: 14px;
+	line-height: 30px;
+}
 
 /*price*/
 

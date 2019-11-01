@@ -65,32 +65,51 @@
 			</div>
 		</section>
 
-		<section class="rewiews">
-			<h2 class="visually-hidden">Отзывы о приложении</h2>
-			<div class="reviews__list slider__list">
-				<blockquote class="reviews__item slider__item">
-					<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-					<cite class="reviews__author-name">Николай Петров<div class="reviews__author-description">25 лет, водитель трамвая</cite>
-				</blockquote>
-					
-				<blockquote class="reviews__item slider__item">
-					<p class="reviews__text">«Все супер, не жалею, что установил!»</p>
-					<cite class="reviews__author-name">Александр Макаров<div class="reviews__author-description">19 лет, студент</cite>
-				</blockquote>
 
-				<blockquote class="reviews__item slider__item">
-					<p class="reviews__text">«Так много лайков как здесь, мне не ставят даже в одноклассниках!»</p>
-					<cite class="reviews__author-name">Галина Ивановна<div class="reviews__author-description">56 лет, домохозяйка</cite>
-				</blockquote>
+		<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+		<input class="visually-hidden" type="radio" id="product-2" name="toggle">
+		<input class="visually-hidden" type="radio" id="product-3" name="toggle">
+
+		<section class="reviews">
+			<h2 class="visually-hidden">Отзывы о приложении</h2>
+			<div class="no-mobile slider__controls--desktop">
 					<button class="reviews__prev" type="button">Предыдущий отзыв</button>
 					<button class="reviews__next" type="button">Следующий отзыв</button>
-				</div>
-				<p class="reviews__toggles slider__toggles">
-					<button class="slider__toggle" type="button">1</button>
-					<button class="slider__toggle" type="button">2</button>
-					<button class="slider__toggle" type="button">3</button>	
-				</p>
 			</div>
+			<div class="slider__controls">
+				<label for="product-1">Первый</label>
+				<label for="product-2">Второй</label>
+				<label for="product-3">Третий</label>
+			</div>
+			<div class="reviews__container">
+				<ul class="reviews__list slider__list">
+    				<li class="slider-list__item slide" id="slide1">
+						<blockquote class="reviews__item">
+							<cite class="reviews__author-name">Николай Петров
+								<div class="no-mobile reviews__author-description">25 лет, водитель трамвая</div>
+							</cite>
+						<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+						</blockquote>
+					</li>
+					<li class="slider-list__item slide" id="slide2">
+						<blockquote class="reviews__item">
+							<cite class="reviews__author-name">Александр Макаров
+								<div class="no-mobile reviews__author-description">19 лет, студент</div>
+							</cite>
+						<p class="reviews__text">«Все супер, не жалею, что установил! Приложение помогает коротать время на скучных лекциях в универе»</p>
+						</blockquote>
+					</li>
+					<li class="slider-list__item slide" id="slide3">
+						<blockquote class="reviews__item">
+							<cite class="reviews__author-name">Галина Ивановна
+								<div class="no-mobile reviews__author-description">56 лет, домохозяйка
+							</div>
+							</cite>
+						<p class="reviews__text">«Так много лайков как здесь, мне не ставят даже в одноклассниках!»</p>
+						</blockquote>
+					</li>	
+    			</ul>
+			</div>	
 		</section>
 
 		<!-- <section class="price">
@@ -119,8 +138,8 @@
 					<td><span class="price__value--yes">Комментарии</span></td>
 				</tr>
 			</table>
-		</section> -->
-	</main>
+		</section>
+	</main> -->
 
 	<footer class="page-footer">
 		<section class="contact__information">
