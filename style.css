@@ -170,11 +170,12 @@ img {
 }
 
 .download {
-	background-image: url(img/iphone-hand.png), 
-					  url(img/back-mobile@1x.png);
+    background-image: url(img/iphone-hand.png),
+					  url(img/background.png);
 	background-repeat: no-repeat;
-	background-position: -1px 106px, center -70px;
-	background-size: auto, contain;
+	background-position: center 105px, center -53px;
+    background-size: auto, 777px auto;
+
 	border-top: 1px solid transparent; 
 }
 
