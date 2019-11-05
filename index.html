@@ -76,11 +76,6 @@
 					<button class="reviews__prev" type="button">Предыдущий отзыв</button>
 					<button class="reviews__next" type="button">Следующий отзыв</button>
 			</div>
-			<div class="slider__controls">
-				<label for="product-1">Первый</label>
-				<label for="product-2">Второй</label>
-				<label for="product-3">Третий</label>
-			</div>
 			<div class="reviews__container">
 				<ul class="reviews__list slider__list">
     				<li class="slider-list__item slide" id="slide1">
@@ -109,50 +104,91 @@
 						</blockquote>
 					</li>	
     			</ul>
+    			<div class="slider__controls">
+					<label for="product-1">Первый</label>
+					<label for="product-2">Второй</label>
+					<label for="product-3">Третий</label>
+				</div>
 			</div>	
 		</section>
 
-		<!-- <section class="price">
+		<section class="price">
 			<h2 class="visually-hidden">Цены на тарифы</h2>
 			<table class="price__table">
-				<th class="price__desk--none"></th>
-				<th><b>База</b><br><span>1,99 usd</span></th>
-				<th><b>Стандарт</b><br><span>3,99 usd</span></th>
-				<th><b>Анлим</b><br><span>9,99 usd</span></th>
+				<th class="no-mobile"></th>
+				<th>
+					<p class="price__description--head">База</p>
+					<p class="price__value--head">1,99 USD</p>
+				</th>
+				<th>
+					<p class="price__description--head">Стандарт</p>
+					<p class="price__value--head">3,99 USD</p>
+				</th>
+				<th>
+					<p class="price__description--head">Анлим</p>
+					<p class="price__value--head">9,99 USD</p>
+				</th>
 				<tr>
-					<td>Розовый фильтр</td>
-					<td><span class="price__value--yes">Розовый фильтр</span></td>
-					<td><span class="price__value--yes">Розовый фильтр</span></td>
-					<td><span class="price__value--yes">Розовый фильтр</span></td>
+					<td class="price__description--main no-mobile">Розовый фильтр</td>
+					<td>
+						<p class="price__description">Розовый фильтр</p>
+						<p class="price__value"><img src="img/yes.svg" width="33" height="23" alt="yes"></p>
+					</td>	
+					<td>
+						<p class="price__description">Розовый фильтр</p>
+						<p class="price__value"><img src="img/yes.svg" width="33" height="23" alt="yes"></p>
+					</td>	
+					<td>
+						<p class="price__description">Розовый фильтр</p>
+						<p class="price__value"><img src="img/yes.svg" width="33" height="23" alt="yes"></p>
+					</td>					
 				</tr>
 				<tr>
-					<td>Смайлики</td>
-					<td><span class="price__value--no">Смайлики</span></td>
-					<td><span class="price__value--yes">Смайлики</span></td>
-					<td><span class="price__value--yes">Смайлики</span></td>
+					<td class="price__description--main no-mobile">Смайлики</td>
+					<td>
+						<span class="price__description">Смайлики</span>
+						<span class="price__value"><img src="img/no.svg" width="29" height="26" alt="no"></span>
+					</td>	
+					<td>
+						<span class="price__description">Смайлики</span>
+						<span class="price__value"><img src="img/yes.svg" width="33" height="23" alt="yes"></span>
+					</td>	
+					<td>
+						<span class="price__description">Смайлики</span>
+						<span class="price__value"><img src="img/yes.svg" width="33" height="23" alt="yes"></span>
+					</td>					
 				</tr>
 				<tr>
-					<td>Комментарии</td>
-					<td><span class="price__value--no">Комментарии</span></td>
-					<td><span class="price__value--no">Комментарии</span></td>
-					<td><span class="price__value--yes">Комментарии</span></td>
+					<td class="price__description--main no-mobile">Комментарии</td>
+					<td>
+						<span class="price__description">Комментарии</span>
+						<span class="price__value"><img src="img/no.svg" width="29" height="26" alt="no"></span>
+					</td>	
+					<td>
+						<span class="price__description">Комментарии</span>
+						<span class="price__value"><img src="img/no.svg" width="29" height="26" alt="no"></span>
+					</td>	
+					<td>
+						<span class="price__description">Комментарии</span>
+						<span class="price__value"><img src="img/yes.svg" width="33" height="23" alt="yes"></span>
+					</td>					
 				</tr>
 			</table>
 		</section>
-	</main> -->
+	</main>
 
 	<footer class="page-footer">
 		<section class="contact__information">
 			<h2 class="visually-hidden">Контактная информация</h2>
 			<p class="contact__title">Остались вопросы? Свяжитесь с нами!</p>
 			<ul class="contact-list">
-				<li class="contact-list__item"><b>Звоните:</b><p>+7 (812) 555-66-66</p></li>
-				<li class="contact-list__item"><b>Пишите:</b><p><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p></li>
-				<li class="contact-list__item"><b>Приезжайте в гости:</b><p><a href="https://yandex.ru/maps/-/CGDre896">ул. Большая Конюшенная, 19/8</a></p></li>
+				<li class="contact-list__item"><b>Звоните:</b><p class="contact__number">+7 (812) 555-66-66</p></li>
+				<li class="contact-list__item"><b>Пишите:</b><p class="contact__email"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p></li>
+				<li class="contact-list__item"><b>Приезжайте в гости:</b><p class="contact__address"><a href="https://yandex.ru/maps/-/CGDre896">ул. Большая<br>Конюшенная, 19/8</a></p></li>
 			</ul>
 		</section>	
 		<section class="page-footer__map">
-			<iframe src="https://yandex.ru/map-widget/v1/-/CGDre896" width="100%" height="auto" allowfullscreen="true"></iframe>
+			<iframe src="https://yandex.ru/map-widget/v1/-/CGDre896" width="100%" height="auto" frameBorder="0"></iframe>
 		</section>
 
 		<section class="no-mobile footer-social">
