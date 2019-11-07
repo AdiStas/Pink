@@ -429,12 +429,14 @@ img {
 	padding-top: 85px;
 	padding-bottom: 50px;
 	margin-bottom: 43px;
+
+	overflow: hidden;
 }
 
 .price__wrapper {
 	width: 320px;
 	margin: 0 auto;
-	/*padding: 0 20px;*/
+	padding: 0 20px;
 
 	position: relative;
 
@@ -443,7 +445,7 @@ img {
 
 .price__table {
 	position: relative;
-    right: 285px;
+    /*right: 285px;*/
 
     margin-bottom: 40px;
 
