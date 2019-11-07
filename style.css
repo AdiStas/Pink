@@ -287,6 +287,8 @@ img {
 .features__slogan {
 	margin-top: 42px;
 	margin-bottom: 35px;
+	padding-left: 20px;
+    padding-right: 20px;
 }
 
 .features__item {
@@ -374,8 +376,8 @@ img {
 
 .slider__controls label {
 	display: inline-block;
-	width: 7px;
-	height: 7px;
+	width: 6px;
+	height: 6px;
 	margin-right: 16px;
 
 	background-color: #bec2c7;
@@ -384,15 +386,15 @@ img {
 	cursor: pointer;
 }
 
-#product-1:checked ~ .reviews #slide1,
-#product-2:checked ~ .reviews #slide2,
-#product-3:checked ~ .reviews #slide3 {
+#review-1:checked ~ .reviews #slide1,
+#review-2:checked ~ .reviews #slide2,
+#review-3:checked ~ .reviews #slide3 {
 	display: block;
 }
 
-#product-1:checked ~ .reviews label[for="product-1"],
-#product-2:checked ~ .reviews label[for="product-2"],
-#product-3:checked ~ .reviews label[for="product-3"] {
+#review-1:checked ~ .reviews label[for="review-1"],
+#review-2:checked ~ .reviews label[for="review-2"],
+#review-3:checked ~ .reviews label[for="review-3"] {
 	background-color: #fff;
 	border: 3px solid #000;
 }
@@ -417,29 +419,39 @@ img {
 /*price*/
 
 .price {
+	position: relative;
+
 	background-image: url(img/bg-triangle-white.svg);
 	background-repeat: no-repeat;
 	background-color: #f2f2f2;
 	background-position: center -1px;
 
 	padding-top: 85px;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 	margin-bottom: 43px;
 }
 
 .price__wrapper {
-	position: relative;
-	padding: 0 20px;
-	overflow: hidden;
+	width: 320px;
+	margin: 0 auto;
+	/*padding: 0 20px;*/
 
-	text-align: center;
+	position: relative;
+
+	overflow: hidden;
 } 
 
 .price__table {
+	position: relative;
+    right: 285px;
+
+    margin-bottom: 40px;
+
 	border-collapse: collapse; 
+	transition: right 0.5s ease-out 0s;
 }
 
-.price th {
+.price__cell {
 	padding: 0;
 	min-width: 280px;
 
@@ -523,6 +535,29 @@ img {
 
 	text-align: right;
 	vertical-align: bottom;
+}
+
+.prise__controls {
+	text-align: center;
+}
+
+#price-1:checked ~ .price .price__table {
+	right: 0;
+}
+
+#price-2:checked ~ .price .price__table {
+	right: 280px;
+}
+
+#price-3:checked ~ .price .price__table {
+	right: 560px;
+}
+
+#price-1:checked ~ .price label[for="price-1"],
+#price-2:checked ~ .price label[for="price-2"],
+#price-3:checked ~ .price label[for="price-3"] {
+	background-color: #fff;
+	border: 3px solid #000;
 }
 
 /*footer*/
