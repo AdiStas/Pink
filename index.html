@@ -15,12 +15,14 @@
 				<img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="25" alt="Pink app">
 			</a>
 			<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-			<ul class="main-nav__list site-list">
-				<li class="site-list__item site-list__item--active"><a>Главная</a></li>
-				<li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-				<li class="site-list__item"><a href="#">Конкурс</a></li>
-				<li class="site-list__item"><a href="#">HTML Academy</a></li>
-			</ul>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item site-list__item--active"><a>Главная</a></li>
+					<li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+					<li class="site-list__item"><a href="#">Конкурс</a></li>
+					<li class="site-list__item"><a href="#">HTML Academy</a></li>
+				</ul>
+			</div>
 		</nav>
 		<div class="download">
 			<div class="download__wrapper">
@@ -41,8 +43,8 @@
 		<section class="features">
 			<h2 class="visually-hidden">Преимущества приложения</h2>
 			<div class="features__slogan">
-				<p class="features__item">Устали от серости мегаполиса?</p> 
-				<p class="features__item">Нам есть, что вам предложить!</p>
+				<p class="features__item features__item--first">Устали от серости мегаполиса?</p> 
+				<p class="features__item features__item--second">Нам есть, что вам предложить!</p>
 			</div>
 			<ul class="features-list">
 				<li class="features-list__item">
@@ -72,7 +74,7 @@
 
 		<section class="reviews">
 			<h2 class="visually-hidden">Отзывы о приложении</h2>
-			<div class="no-mobile slider__controls--desktop">
+			<div class="slider__controls--desktop">
 					<button class="reviews__prev" type="button">Предыдущий отзыв</button>
 					<button class="reviews__next" type="button">Следующий отзыв</button>
 			</div>

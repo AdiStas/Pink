@@ -36,7 +36,7 @@ img {
 	display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 660px) {
 	.no-mobile {
 		display: block;
 	}
@@ -53,7 +53,7 @@ img {
 	padding-left: 20px;
 	padding-bottom: 20px;
 
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid transparent;
 }
 
 .page-header__logo img {
@@ -90,6 +90,22 @@ img {
 
 	cursor: pointer;
 	border: none;
+}
+
+@media (min-width: 660px) {
+	.main-nav {
+		padding-top: 44px;
+	}
+
+	.main-nav__toggle {
+		top: 44px;
+	}
+
+	.page-header__logo {
+		padding-bottom: 40px;
+
+		border-bottom: 1px solid transparent;
+	}
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -188,12 +204,15 @@ img {
 }
 
 @media (max-width: 1199px) {
-	.main-nav--closed .site-list__item {
+	.main-nav--closed .site-list__item,
+	.slider__controls--desktop {
 		display: none;
 	}
 }
 
 .download {
+	margin-bottom: 42px;
+
     background-image: url(img/iphone-hand.png),
 					  url(img/background.png);
 	background-repeat: no-repeat;
@@ -276,6 +295,62 @@ img {
 	line-height: 24px;
 }
 
+@media (min-width: 660px) {
+	.download {
+		margin-bottom: 50px;
+
+		background-image: url(img/iphone-tablet.png),
+					  	  url(img/background.png); 
+		background-position: center 70px, center -113px;
+    	background-size: auto, 1200px auto;
+	}
+
+	.download__wrapper {
+		display: flex;
+		flex-direction: column;
+
+		width: 300px;
+		padding-left: 20px;
+		margin-top: 72px;
+
+		text-align: center;
+
+		background-color: transparent;
+	}
+
+	.download__slogan {
+		display: block;
+
+		padding-left: 55px;
+		padding-right: 55px;
+		margin-bottom: 32px;
+
+		font-size: 40px;
+		font-weight: 300;
+		line-height: 47px;
+
+		color: #fff;
+	}
+
+	.download__button {
+		padding: 15px 45px 15px 44px;
+		margin: 0 0 45px 0;
+	}
+
+	.download-list {
+		margin-bottom: 33px;
+	}
+
+	.download__description {
+		width: 100%;
+		padding-bottom: 30px;
+		margin-bottom: 80px;
+
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+
 /*page-main*/
 
 /*features*/
@@ -285,7 +360,6 @@ img {
 }
 
 .features__slogan {
-	margin-top: 42px;
 	margin-bottom: 35px;
 	padding-left: 20px;
     padding-right: 20px;
@@ -341,6 +415,123 @@ img {
 
 	font-size: 14px;
 	line-height: 24px;
+}
+
+@media (min-width: 660px) {
+
+	.features {
+		margin-bottom: 10px;
+	}
+
+	.features__slogan {
+		margin-top: 0;
+		margin-bottom: 50px;
+		padding-left: 20px;
+    	padding-right: 20px;
+	}
+
+	.features__item {
+		padding: 0;
+		margin: 0;
+		margin-bottom: 32px;
+
+		font-size: 40px;
+		font-weight: 300;
+	}
+
+	.features__item--first {
+		margin-bottom: 3px;
+	}
+
+	.features__item--second {
+		padding-left: 135px;
+		padding-right: 135px;
+	}
+
+	.features-list {
+		min-height: 395px;
+		min-width: 310px;
+		margin: 0;
+		margin-bottom: 55px;
+		padding: 0;
+		padding-top: 75px;
+		padding-right: 20px;
+		padding-left: 330px;
+		padding-bottom: 15px;
+
+		background-color: #f2f2f2;
+		background-image: url(img/iphone-screen-tablet.png),
+					  	  url(img/bg-triangle-white.svg);
+		background-repeat: no-repeat;
+		background-position: 20px 3px, center -1px;
+
+		text-align: left;
+	}
+
+	.features-list__item {
+		padding: 0;
+	}
+
+	.features-effect {
+		position: relative;
+
+		min-width: 310px;
+		margin: 0;
+		padding: 0;
+		padding-top: 35px;
+   		padding-bottom: 115px;
+		padding-left: 330px;
+
+		background-image: url(img/diagramm-fill.svg),
+						  url(img/timer.svg);
+		background-repeat: no-repeat;
+		background-position: 39px 58px, 20px 3px;
+    	background-size: 202px 202px, 238px 276px;
+	}
+
+	.features-effect::before {
+		content: '24';
+
+		position: absolute;
+		top: 80px;
+		left: 84px;
+
+		font-size: 96px;
+		line-height: 150px;
+		font-weight: bold;
+
+		color: #d22856; 
+	}
+
+	.features-effect__title {
+		margin: 0;
+		padding: 0;
+		padding-top: 5px;
+		padding-right: 140px;
+
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+	.features-effect__item {
+		margin: 0;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 0;
+		padding-right: 22px;
+
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.features-effect__link {
+		display: block;
+
+		font-size: 14px;
+		line-height: 24px;
+
+		color: #d22856;
+	}
 }
 
 /*rewiews*/
@@ -414,6 +605,39 @@ img {
 .reviews__text {
 	font-size: 14px;
 	line-height: 30px;
+}
+
+@media (min-width: 660px) {
+	.reviews {
+		margin-bottom: 25px;
+	}
+
+	.reviews__item {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.reviews__author-name {
+		font-size: 20px;
+	}
+
+	.reviews__author-description {
+		font-size: 14px;
+		line-height: 30px;
+		font-weight: normal;
+	}
+
+	.reviews__text {
+		margin: 0;
+		margin-bottom: 35px;
+		padding: 0;
+
+		font-size: 18px;
+	}
+
+	.reviews__list {
+		min-height: 220px;
+	}
 }
 
 /*price*/
