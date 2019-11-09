@@ -36,7 +36,7 @@ img {
 	display: none;
 }
 
-@media (min-width: 660px) {
+@media (min-width: 659px) {
 	.no-mobile {
 		display: block;
 	}
@@ -418,7 +418,6 @@ img {
 }
 
 @media (min-width: 660px) {
-
 	.features {
 		margin-bottom: 10px;
 	}
@@ -669,7 +668,6 @@ img {
 
 .price__table {
 	position: relative;
-    /*right: 285px;*/
 
     margin-bottom: 40px;
 
@@ -786,6 +784,98 @@ img {
 	border: 3px solid #000;
 }
 
+@media (min-width: 660px) {
+	.price {
+		padding-bottom: 25px;
+    	margin-bottom: 50px;
+
+		overflow: visible;
+	}
+
+	.price__wrapper {
+		width: 620px;
+
+		position: relative;
+
+		overflow: visible;
+	} 
+
+	.price__table {
+		width: 100%;
+
+		position: relative;
+
+    	margin-bottom: 40px;
+	}
+
+	.price__cell {
+		min-width: auto;
+	}
+
+	.price td {
+		width: 152px;
+		padding: 0;
+		padding-top: 10px;
+    	padding-bottom: 4px;
+
+		text-align: center;
+	}
+
+	.price__value {
+		padding: 0;
+
+		text-align: center;
+	}
+
+	.price__description {
+		display: none;
+	}
+
+	.price__description--head {
+		padding: 0;
+		padding-top: 9px;
+
+		font-size: 16px;
+	}
+
+	.price__description--main {
+		display: table-cell;
+
+		font-size: 14px;
+	}
+
+	.price__description--main span {
+		display: block;
+    	text-align: left;
+    	padding-left: 16px;
+    	padding-bottom: 7px;
+    }
+
+	.price__value--head {
+		padding: 0;
+		padding-bottom: 9px;
+
+		font-size: 18px;
+	}
+
+	.price__cell--hit {
+		position: relative;
+	}
+
+	.price__cell--hit::before {
+		top: 2px;
+    	left: -56px;
+	}
+
+	.prise__controls {
+		display: none;
+	}
+
+	#price-2:checked ~ .price .price__table {
+		right: 0;
+	}	
+}
+
 /*footer*/
 
 /*contact*/
@@ -829,6 +919,7 @@ img {
 	color: #d22856;
 
 	font-size: 24px;
+	font-weight: 300;
 
 	text-decoration: none;
 }
@@ -846,11 +937,51 @@ img {
 	margin-top: 6px;
 }
 
+@media (min-width: 660px) {
+	.contact__information {
+		margin-bottom: 10px;
+	}
+
+	.contact__title {
+		margin: 0;
+		margin-bottom: 47px;
+		padding-left: 50px;
+		padding-right: 50px;
+
+		font-weight: 300;
+		font-size: 40px;
+	}
+
+	.contact-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.contact-list__item {
+		flex-basis: 50%;
+	}
+
+	.contact-list__item:last-child {
+		flex-basis: 100%;
+		margin-top: 25px;
+	}
+}
+
 /*map*/
 
 .page-footer__map-wrapper {
 	position: relative;
 	z-index: 1;
+}
+
+.page-footer__map-wrapper iframe {
+	height: 200px;
+
+	background-image: url();
 }
 
 .page-footer__map-wrapper::before {
@@ -871,4 +1002,117 @@ img {
 	z-index: 2;
 }
 
+@media (min-width: 660px) {
+	.page-footer__map {
+		margin-bottom: 30px;
+	}
+
+	.page-footer__map-wrapper::before {
+		min-height: 70px;
+
+		background-size: 100% 65px;
+	}
+
+	.page-footer__map-wrapper iframe {
+		height: 375px;
+	}
+}
+
 /*social*/
+
+@media (min-width: 660px) {
+	.footer-social {
+		display: flex;
+		justify-content: space-between;
+
+		padding: 0 20px;
+	}
+
+	.st0 {
+		fill:#283645;
+	}
+
+	.st0:hover,
+	.st0:focus {
+		fill: #d22856;
+	}
+
+	.st0:active,
+	.st1:active,
+	.st2:active {
+		opacity: 0.3;
+	}
+
+	.footer-social__list {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		align-items: center;
+
+		width: 190px;
+		padding: 0;
+		margin: 0;
+		margin-bottom: 35px;
+		margin-right: 18px;
+    	margin-top: 3px;
+
+		list-style: none;
+	}
+
+	.footer-social__logo--htmlacademy svg {
+		width: 27px;
+		height: 34px;
+	}
+
+	.social__link {
+		display: flex;
+		align-items: center;
+    	justify-content: center;
+
+		width: 45px;
+		height: 45px;
+
+		border: 3px solid #eae6dd;
+		border-radius: 50%;
+	}
+
+	.social__link:hover,
+	.social__link:focus {
+		border: 3px solid #283645;
+	}
+
+	.social__link:active {
+		opacity: 0.1;
+	}
+
+	.social__development {
+		width: 150px;
+
+		padding-top: 15px;
+		margin-right: -20px;
+	}
+
+	.social__development a {
+		display: flex;
+		align-items: center;
+
+		font-size: 14px;
+		line-height: 18px;
+
+		color: #000;
+		text-decoration: none;
+	}
+
+	.social__logo-wrapper {
+		margin-left: 15px;
+	}
+
+	/*.footer-social__logo--htmlacademy ~ svg:hover,
+	.footer-social__logo--htmlacademy ~ svg:focus {
+		fill: #283645;
+	}
+
+	.footer-social__logo--htmlacademy:active {
+		opacity: 0.3;
+	}*/
+}
