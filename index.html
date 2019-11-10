@@ -12,7 +12,11 @@
 	<header class="page-header">
 		<nav class="main-nav main-nav--closed">
 			<a class="page-header__logo">
-				<img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="25" alt="Pink app">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+					<source media="(min-width: 660px)" srcset="img/logotype-tablet.svg">
+					<img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="25" alt="Pink app logo">
+				</picture>
 			</a>
 			<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 			<div class="main-nav__wrapper">
@@ -202,8 +206,7 @@
 		</section>	
 		<section class="page-footer__map">
 			<div class="page-footer__map-wrapper">
-				<iframe src="https://yandex.ru/map-widget/v1/-/CGDre896" width="100%"
-				frameborder="0"></iframe>
+				<iframe src="https://yandex.ru/map-widget/v1/-/CGTJuC0o" width="100%" frameborder="0" allowfullscreen="true"></iframe>
 			</div>
 		</section>
 
