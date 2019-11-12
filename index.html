@@ -21,7 +21,7 @@
 			<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 			<div class="main-nav__wrapper">
 				<ul class="main-nav__list site-list">
-					<li class="site-list__item site-list__item--active"><a>Главная</a></li>
+					<li class="site-list__item site-list__item--active"><a >Главная</a></li>
 					<li class="site-list__item"><a href="photo.html">Фотографии</a></li>
 					<li class="site-list__item"><a href="#">Конкурс</a></li>
 					<li class="site-list__item"><a href="#">HTML Academy</a></li>
@@ -29,6 +29,7 @@
 			</div>
 		</nav>
 		<div class="download">
+			<div class="page-container">
 			<div class="download__wrapper">
 				<b class="no-mobile download__slogan">Взгляните на жизнь иначе!</b>
 				<a href="https://www.apple.com/ru/itunes" class="download__button">Скачать приложение</a>
@@ -40,11 +41,13 @@
 				<p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
 			</div>
 		</div>
+		</div>
 	</header>
 
 	<main class="page-main">
 		<h1 class="visually-hidden">Мобильное приложение Pink</h1>
 		<section class="features">
+			<div class="page-container">
 			<h2 class="visually-hidden">Преимущества приложения</h2>
 			<div class="features__slogan">
 				<p class="features__item features__item--first">Устали от серости мегаполиса?</p> 
@@ -69,6 +72,7 @@
 				<p class="features-effect__item">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
 				<a href="#" class="features-effect__link">Узнать больше об исследовании</a>
 			</div>
+		</div>
 		</section>
 
 
@@ -78,9 +82,10 @@
 
 		<section class="reviews">
 			<h2 class="visually-hidden">Отзывы о приложении</h2>
+			<div class="page-container">
 			<div class="slider__controls--desktop">
-					<button class="reviews__prev" type="button">Предыдущий отзыв</button>
-					<button class="reviews__next" type="button">Следующий отзыв</button>
+					<button class="visually-hidden reviews__prev" type="button">Предыдущий отзыв</button>
+					<button class="visually-hidden reviews__next" type="button">Следующий отзыв</button>
 			</div>
 			<div class="reviews__container">
 				<ul class="reviews__list slider__list">
@@ -116,6 +121,7 @@
 					<label for="review-3">Третий</label>
 				</div>
 			</div>	
+		</div>
 		</section>
 
 		<input class="visually-hidden" type="radio" id="price-1" name="table-toggle">
@@ -124,6 +130,7 @@
 
 		<section class="price">
 			<h2 class="visually-hidden">Цены на тарифы</h2>
+			<div class="page-container">
 			<div class="price__wrapper">
 				<table class="price__table">
 					<th class="no-mobile price__cell--no-mobile"></th>
@@ -191,25 +198,29 @@
 					<label for="price-3">3</label>
 				</div>
 			</div>
+		</div>
 		</section>
 	</main>
 
 	<footer class="page-footer">
 		<section class="contact__information">
 			<h2 class="visually-hidden">Контактная информация</h2>
+			<div class="page-container">
 			<p class="contact__title">Остались вопросы? Свяжитесь с нами!</p>
 			<ul class="contact-list">
 				<li class="contact-list__item"><b>Звоните:</b><p class="contact__number">+7 (812) 555-66-66</p></li>
 				<li class="contact-list__item"><b>Пишите:</b><p class="contact__email"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p></li>
 				<li class="contact-list__item"><b>Приезжайте в гости:</b><p class="contact__address"><a href="https://yandex.ru/maps/-/CGDre896">ул. Большая<br>Конюшенная, 19/8</a></p></li>
 			</ul>
+			<div class="page-container">
 		</section>	
 		<section class="page-footer__map">
 			<div class="page-footer__map-wrapper">
-				<iframe src="https://yandex.ru/map-widget/v1/-/CGTJuC0o" width="100%" frameborder="0" allowfullscreen="true"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002806!2d30.320858715677204!3d59.93871916905467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573590934724!5m2!1sru!2sru" width="100%" frameborder="0" style="border:0;" allowfullscreen="true"></iframe>
 			</div>
 		</section>
 
+		<div class="page-container">
 		<section class="no-mobile footer-social">
 			<a class="footer-social__logo">
 				<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150" height="40" viewBox="0 0 146.3 40.4" style="enable-background:new 0 0 146.3 40.4;" xml:space="preserve">
@@ -267,7 +278,9 @@
 					</div>
 				</a>
 			</div>
+		
 		</section>
+		</div>
 	</footer>
 
 	<script src="script.js"></script>

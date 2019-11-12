@@ -15,6 +15,11 @@ img {
 	height: auto;
 }
 
+.page-container {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
 .visually-hidden,
 .visually-hidden:not(:focus):not(:active) {
 	position: absolute;
@@ -444,9 +449,10 @@ img {
 		flex-direction: column;
 
 		width: 300px;
-		padding-left: 130px;
+		padding-left: 0;
 		padding-bottom: 120px;
 		margin-top: 72px;
+		margin-left: 11%;
 
 		text-align: center;
 
@@ -666,9 +672,7 @@ img {
 
 @media (min-width: 1200px) {
 	.features {
-		margin-bottom: 10px;
-
-		min-height: 1040px;
+		margin-bottom: 65px;
 	}
 
 	.features__slogan {
@@ -702,6 +706,7 @@ img {
 
 		position: relative;
 
+		min-height: initial;
 		margin: 0;
 		padding: 0;
 		padding-left: 130px;
@@ -718,6 +723,7 @@ img {
 
 	.features-list__item {
 		padding: 0;
+		margin-bottom: 0;
 		flex-basis: 30%;
 	}
 
@@ -731,8 +737,10 @@ img {
 		content: "";
 
 		position: absolute;
-		bottom: 417px;
-		left: 55px;
+		bottom: 255px;
+		left: 50%;
+
+		transform: translate(-50%);
 		
 		width: 186px;
 		height: 300px;
@@ -744,8 +752,10 @@ img {
 		content: "";
 
 		position: absolute;
-		bottom: 417px;
-		left: 50px;
+		bottom: 255px;
+		left: 50%;
+
+		transform: translate(-50%);
 
 		width: 186px;
 		height: 300px;
@@ -757,8 +767,10 @@ img {
 		content: "";
 
 		position: absolute;
-		bottom: 417px;
-		left: 50px;
+		bottom: 255px;
+		left: 50%;
+
+		transform: translate(-50%);
 
 		width: 186px;
 		height: 300px;
@@ -766,11 +778,29 @@ img {
 		background-image: url(img/iphone-screen-3.png);
 	}
 
+	.features-list__item--left::after,
+	.features-list__item--center::after,
+	.features-list__item--right::after {
+		position: absolute;
+
+		content: "";
+
+		left: 50%;
+		bottom: 247px;
+
+		transform: translate(-50%);
+
+		width: 294px;
+		height: 17px;
+
+		background-image: url(img/iphone-shadow.png);
+	}
+
 	.features__title {
 		font-size: 30px;
 		line-height: 30px;
 
-		margin-bottom: 22px;
+		margin-bottom: 26px;
 	}
 
 	.features__description {
@@ -778,54 +808,49 @@ img {
 		line-height: 30px;
 	}
 
-	/*закончил тут*/
-
 	.features-effect {
-		padding-top: 35px;
+		padding-top: 155px;
    		padding-bottom: 115px;
-		padding-left: 330px;
+		padding-left: 41%;
+		margin-top: -1px;
 
-		background-position: 39px 58px, 20px 3px;
-    	background-size: 202px 202px, 238px 276px;
+		background-color: #f2f2f2;
+		background-position: 16.5% 60%, 15% 50%;
+    	background-size: 253px 253px, 298px 345px;
 	}
 
 	.features-effect::before {
-		top: 80px;
-		left: 84px;
+		top: 34%;
+    	left: 17.5%;
 
-		font-size: 96px;
-		line-height: 150px;
-		font-weight: bold;
+		font-size: 120px;
+		line-height: 187px;
 	}
 
 	.features-effect__title {
 		margin: 0;
+		margin-bottom: 25px;
 		padding: 0;
 		padding-top: 5px;
 		padding-right: 140px;
 
-		font-size: 30px;
-		line-height: 36px;
+		line-height: 30px;
 	}
 
 	.features-effect__item {
 		margin: 0;
 		margin-top: 10px;
-		margin-bottom: 10px;
+		margin-bottom: 30px;
 		padding: 0;
-		padding-right: 22px;
+		padding-right: 155px;
 
-		font-size: 14px;
-		line-height: 24px;
+		font-size: 18px;
+		line-height: 30px;
 	}
 
 	.features-effect__link {
-		display: block;
-
-		font-size: 14px;
-		line-height: 24px;
-
-		color: #d22856;
+		font-size: 18px;
+		line-height: 30px;
 	}
 }
 
@@ -935,6 +960,57 @@ img {
 
 	.reviews__list {
 		min-height: 220px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.reviews__container .slider__controls {
+		display: none;
+	}
+
+	.reviews {
+		margin-bottom: 10px;
+	}
+
+	.reviews__list {
+		position: relative;
+
+		padding-top: 120px;
+		padding-left: 150px;
+		padding-right: 150px;
+	}
+
+	.reviews__list::before {
+		position: absolute;
+
+		content: ""; 
+
+		width: 79px;
+		height: 63px;
+
+		top: 0;
+		left: 50%;
+
+		transform: translate(-50%);
+
+		background-image: url(img/quotes.svg);
+		background-repeat: no-repeat;
+
+	}
+
+	.slider-list__item {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.reviews__author-name {
+		font-size: 24px;
+	}
+
+	.reviews__author-description {
+		font-size: 18px;
+		line-height: 30px;
+		font-weight: normal;
 	}
 }
 
@@ -1170,9 +1246,72 @@ img {
 		display: none;
 	}
 
-	#price-2:checked ~ .price .price__table {
+	#price-2:checked ~ .price .price__table,
+	#price-3:checked ~ .price .price__table {
 		right: 0;
 	}	
+}
+
+@media (min-width: 1200px) {
+	.price {
+		padding-bottom: 50px;
+    	margin-bottom: 68px;
+	}
+
+	.price__wrapper {
+		width: 940px;
+
+		padding-top: 60px;
+	} 
+
+	.price td {
+		width: 152px;
+		padding: 0;
+		padding-top: 10px;
+    	padding-bottom: 10px;
+
+		text-align: center;
+	}
+
+	.price__value {
+		padding: 0;
+
+		text-align: center;
+	}
+
+	.price__description--head {
+		padding: 0;
+		padding-top: 14px;
+
+		font-size: 18px;
+	}
+
+	.price__description--main {
+		display: table-cell;
+
+		font-size: 14px;
+	}
+
+	.price__description--main span {
+		font-size: 18px;
+		line-height: 30px;
+
+		padding-bottom: 5px;
+		padding-top: 5px;
+    }
+
+	.price__value--head {
+		padding: 0;
+		padding-bottom: 19px;
+		padding-top: 4px;
+
+		font-size: 24px;
+	}
+
+	.price__cell--hit::before {
+		top: 12px;
+    	left: -50px;
+	}
 }
 
 /*footer*/
@@ -1186,6 +1325,8 @@ img {
 .contact__title {
 	margin: 0;
 	margin-bottom: 38px;
+	padding-left: 20px;
+	padding-right: 20px;
 
 	font-weight: 300;
 	font-size: 24px;
@@ -1280,6 +1421,37 @@ img {
 	}
 }
 
+@media (min-width: 1200px) {
+	.contact__title {
+		margin-bottom: 60px;
+		padding-left: 300px;
+		padding-right: 300px;
+
+		font-size: 50px;
+	}
+
+	.contact-list {
+		justify-content: space-around;
+	}
+
+	.contact-list__item {
+		flex-basis: 25%;
+	}
+
+	.contact-list__item:nth-child(2) {
+		order: 1;
+	}
+
+	.contact-list__item:last-child {
+		flex-basis: 25%;
+		margin-top: 0;
+	}
+
+	.contact-list__item p {
+		margin-top: 26px;
+	}
+}
+
 /*map*/
 
 .page-footer__map-wrapper {
@@ -1324,6 +1496,22 @@ img {
 
 	.page-footer__map-wrapper iframe {
 		height: 375px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.page-footer__map {
+		margin-bottom: 60px;
+	}
+
+	.page-footer__map-wrapper::before {
+		min-height: 86px;
+
+		background-size: 100% 85px;
+	}
+
+	.page-footer__map-wrapper iframe {
+		height: 500px;
 	}
 }
 
@@ -1417,6 +1605,13 @@ img {
 
 	.footer-social__logo--htmlacademy:active {
 		opacity: 0.3;
+	}
+}
+
+@media (min-width: 1200px) {
+	.footer-social {
+		padding-left: 130px;
+		padding-right: 130px;
 	}
 }
 
