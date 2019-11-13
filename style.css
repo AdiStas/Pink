@@ -843,7 +843,7 @@ img {
 	}
 
 	.features-effect {
-		padding-top: 155px;
+		padding-top: 160px;
    		padding-bottom: 115px;
 		padding-left: 41%;
 		margin-top: -1px;
@@ -1647,5 +1647,218 @@ img {
 		padding-left: 130px;
 		padding-right: 130px;
 	}
+}
+
+
+
+/*photo-page*/
+
+.photo-page__name {
+	margin: 0;
+
+	background-color: #283645;
+	background-image: url("img/photo/bg-download-mobile-1x.jpg");
+	background-repeat: no-repeat;
+	background-position: center -45px;
+    background-size: 659px auto;
+}
+
+.name__description {
+	color: #fff;
+
+	margin: 0;
+	padding-top: 32px;
+	padding-bottom: 85px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	font-size: 24px;
+	font-weight: 300;
+
+	text-align: center;
+}
+
+/*photo-page__main*/
+
+.photo-page__promo {
+	display: block;
+
+	width: 250px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	padding-top: 45px;
+
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: normal;
+
+	text-align: center;
+}
+
+.photo-page-gallery {
+	margin-bottom: 37px;
+}
+
+.photo-page__gallery--main-photo {
+	position: relative;
+}
+
+.photo-page__gallery--main-photo::before {
+	content: "Панорама дня";
+
+	position: absolute;
+	right: 20px;
+	top: 0;
+
+	padding-top: 5px;
+
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	width: 140px;
+	height: 30px;
+
+	background-color: #d22856;
+	color: #fff;
+
+	text-align: center;
+}
+
+.post__picture {
+	width: 100%;
+}
+
+.user__photo {
+	margin-left: 20px;
+    margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.photo-page__gallery--main-photo {
+	margin-left: 0;
+	margin-right: 0; 
+	margin-bottom: 20px;
+}
+
+.photo__description {
+	margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 20px;
+
+    background-color: #f2f2f2;
+}
+
+.main-photo__description {
+	margin-left: 20px;
+    margin-right: 20px;
+}
+
+.photo__comment {
+	margin: 0 0 10px 0;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.main-photo__comment {
+	padding-top: 13px;
+}
+
+.comment__author {
+	font-size: 14px; 
+	line-height: 24px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.comment__time {
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.comment__text {
+	margin: 0;
+
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.user-photo__list {
+	margin: 0;
+	padding: 0; 
+
+	list-style: none;
+}
+
+.photo__like {
+	display: block;
+	padding: 0;
+	margin: 0;
+	margin-left: 17px;
+
+	color: #d22856;
+	background-color: transparent;
+
+	font-size: 12px;
+	line-height: 24px;
+	text-transform: uppercase;
+
+	border: none; 
+
+	cursor: pointer;
+}
+
+.photo__like svg {
+	padding-right: 20px;
+}
+
+.photo__like:hover svg,
+.photo__like:focus svg {
+	stroke: #d22856;
+}
+
+.photo__like:active {
+	opacity: 0.3;
+}
+
+/*photo-download*/
+
+.photo-download__container {
+	min-width: 320px;
+
+	padding-left: 20px;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+
+.photo-download__slogan {
+	display: block;
+
+	margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 73px;
+
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: normal;
+
+	text-align: center;
+}
+
+.photo-download__area {
+	background-color: #f2f2f2;
+
+	padding-top: 20px;
+}
+
+.upload-picture {
+	display: block;
+
+	margin-bottom: 20px;
 }
 
