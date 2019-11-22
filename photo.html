@@ -38,7 +38,7 @@
 		<section class="photo-page-gallery">
 			<h2 class="visually-hidden">Фотографии пользователей</h2>
 			<b class="photo-page__promo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</b>
-				<article class="user__photo photo-page__gallery--main-photo">
+				<article class="photo-page__gallery--main-photo">
 					<picture>
 						<source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/panorama-desktop-1x.webp 1x, img/photo/panorama-desktop-2x.webp 2x">
 						<source type="image/webp" media="(min-width: 660px)" srcset="img/photo/panorama-tablet-1x.webp 1x, img/photo/panorama-tablet-2x.webp 2x">
@@ -47,16 +47,16 @@
 						<source media="(min-width: 660px)" srcset="img/photo/panorama-tablet-1x.jpg 1x, img/photo/panorama-tablet-2x.jpg 2x">
 						<img src="img/photo/panorama-mobile-1x.jpg" srcset="img/photo/panorama-mobile-2x.jpg 2x" alt="Панорама дня">
 					</picture>
-					<div class="main-photo__description photo__description">
-						<blockquote class="main-photo__comment photo__comment">
+					<div class="main-photo__description">
+						<blockquote class="main-photo__comment">
 							<cite class="main-photo__author comment__author">Анна</cite>
 							<span class="main-photo__time comment__time">(5 минут назад)</span>
 							<p class="main-photo__text comment__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
 						</blockquote>
-						<div class="button-wrapper button-wrapper--main">
+						<div class="button-wrapper--main">
 							<button class="main-photo__like photo__like" type="button">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.54 11.99" width="13" height="12"><path d="M6.24 12a.73.73 0 0 1-.56-.25C1.89 7.42 1 6.44.83 6.17A3.85 3.85 0 0 1 0 3.8 3.82 3.82 0 0 1 6.28.9 3.85 3.85 0 0 1 8.75 0a3.8 3.8 0 0 1 3.79 3.8 3.48 3.48 0 0 1-.89 2.38l-4.86 5.56a.73.73 0 0 1-.55.25zM2 5.28c.21.26 2.47 2.84 4.24 4.86l4.32-4.94a2 2 0 0 0 .52-1.4 2.33 2.33 0 0 0-2.33-2.33 2.43 2.43 0 0 0-1.9.94.79.79 0 0 1-.59.28.71.71 0 0 1-.57-.3 2.36 2.36 0 0 0-1.89-.92A2.34 2.34 0 0 0 2 5.27z" fill="#d22856"/></svg>
-							</button><span class="like-quantity like-quantity--main">Нравится: 215</span>
+							</button><span class="like-quantity--main">Нравится: 215</span>
 						</div>
 					</div>
 				</article>
@@ -223,54 +223,55 @@
 				<div class="photo-download__area">
 					<div class="photo-download__container">
 						<picture class="upload-picture">
-							<img src="img/photo/photo-upload-1x.webp" alt="Фото для загрузки">
+							<source type="image/webp" srcset="img/photo/photo-upload-1x.webp, img/photo/photo-upload-2x.webp 2x">
+							<img src="img/photo/photo-upload-1x.jpg" srcset="img/photo/photo-upload-2x.jpg 2x" alt="Добавьте ваше фото">
 						</picture>
 					</div>
 					<div class="settings-list__wrapper">
-					<ul class="photo-download__settings-list">
-						<li class="settings__item">
-							<label for="crop">
-								<span class="visually-hidden">Обрезка фото</span>
-								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" width="48" height="48" fill="#283645" style="enable-background:new 0 0 48 48;" xml:space="preserve">
-									<style type="text/css">
+						<ul class="photo-download__settings-list">
+							<li class="settings__item">
+								<label for="crop">
+									<span class="visually-hidden">Обрезка фото</span>
+									<svg class="crop-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" width="48" height="48" fill="#283645" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+										<style type="text/css">
 									.st10{fill:none;}
-									</style>
-									<path class="st10" d="M0,0h48v48H0V0z"/>
-									<path d="M34,30h4V14c0-2.2-1.8-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.2,1.8,4,4,4h20v8h4v-8h8v-4H14z"/>
-								</svg>
-							</label>
-							<input type="range" class="range-input" id="setting1" min="0" max="100" step="1" value="30" name="crop">
-						</li>
-						<li class="settings__item">
-							<label for="fill" id="fill-label">
-								<span class="visually-hidden">Заливка фото цветом</span>
-								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="45" fill="#283645" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
-									<style type="text/css">
+										</style>
+										<path class="st10" d="M0,0h48v48H0V0z"/>
+										<path d="M34,30h4V14c0-2.2-1.8-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.2,1.8,4,4,4h20v8h4v-8h8v-4H14z"/>
+									</svg>
+								</label>
+								<input type="range" class="range-input" id="setting1" min="0" max="100" step="1" value="30" name="crop">
+							</li>
+							<li class="settings__item">
+								<label for="fill" id="fill-label">
+									<span class="visually-hidden">Заливка фото цветом</span>
+									<svg class="fill-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="45" fill="#283645" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+										<style type="text/css">
 									.st30{fill:none;}
-									</style>
-									<path class="st30" d="M0,0h48v48H0V0z"/>
-									<path d="M33.1,17.9L15.2,0l-2.8,2.8l4.8,4.8L6.9,17.9c-1.2,1.2-1.2,3.1,0,4.2l11,11c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9l11-11 C34.3,21,34.3,19,33.1,17.9z M10.4,20l9.6-9.6l9.6,9.6H10.4z M38,23c0,0-4,4.3-4,7c0,2.2,1.8,4,4,4s4-1.8,4-4C42,27.3,38,23,38,23z"/>
-									<rect y="40" width="48" height="3"/>
-								</svg>
-							</label>
-							<input type="range" class="range-input" id="setting2" min="0" max="100" step="1" value="50" name="fill">
-						</li>
-						<li class="settings__item">
-							<label for="contrast" id="contrast-label">
-								<span class="visually-hidden">Контраст фото</span>
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.92 31.92" width="32" height="32" fill="#283645">
-									<path d="M16,4A12,12,0,1,1,4,16,12,12,0,0,1,16,4m0-4a16,16,0,1,0,16,16A16,16,0,0,0,16,0Z"/>
-									<path d="M16,24.29a8.52,8.52,0,0,0,0-17"/>
-								</svg>
-							</label>
-							<input type="range" class="range-input" id="setting3" min="0" max="100" step="1" value="40" id="contrast" name="contrast">
-						</li>
-					</ul>
-				</div>
-					<div class="photo-send">
-						<button class="photo-send__button--send photo-download__btn" type="submit">Запостить</button>
-						<button class="photo-send__button--reset photo-download__btn" type="reset">Отмена</button>
-					</div>
+										</style>
+										<path class="st30" d="M0,0h48v48H0V0z"/>
+										<path d="M33.1,17.9L15.2,0l-2.8,2.8l4.8,4.8L6.9,17.9c-1.2,1.2-1.2,3.1,0,4.2l11,11c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9l11-11 C34.3,21,34.3,19,33.1,17.9z M10.4,20l9.6-9.6l9.6,9.6H10.4z M38,23c0,0-4,4.3-4,7c0,2.2,1.8,4,4,4s4-1.8,4-4C42,27.3,38,23,38,23z"/>
+										<rect y="40" width="48" height="3"/>
+									</svg>
+								</label>
+								<input type="range" class="range-input" id="setting2" min="0" max="100" step="1" value="50" name="fill">
+							</li>
+							<li class="settings__item">
+								<label for="contrast" id="contrast-label">
+									<span class="visually-hidden">Контраст фото</span>
+									<svg class="contrast-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.92 31.92" width="32" height="32" fill="#283645">
+										<path d="M16,4A12,12,0,1,1,4,16,12,12,0,0,1,16,4m0-4a16,16,0,1,0,16,16A16,16,0,0,0,16,0Z"/>
+										<path d="M16,24.29a8.52,8.52,0,0,0,0-17"/>
+									</svg>
+								</label>
+								<input type="range" class="range-input" id="setting3" min="0" max="100" step="1" value="40" id="contrast" name="contrast">
+							</li>
+						</ul>
+						<div class="photo-send">
+							<button class="photo-send__button--send photo-download__btn" type="submit">Запостить</button>
+							<button class="photo-send__button--reset photo-download__btn" type="reset">Отмена</button>
+						</div>
+					</div>	
 				</div>
 			</form>
 		</section>
