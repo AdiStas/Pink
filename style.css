@@ -1649,11 +1649,11 @@ img {
 	}
 }
 
-
+/*inner*/
 
 /*photo-page*/
 
-.photo-page__name {
+.inner-page__name {
 	margin: 0;
 	margin-bottom: 45px;
 
@@ -1667,7 +1667,7 @@ img {
 @media (-webkit-min-device-pixel-ratio: 1.5),
 	   (min-resolution: 1.5dppx), 
 	   (min-resolution: 144dpi) {
-	.photo-page__name {
+	.inner-page__name {
 		background-image: url("img/photo/bg-download-mobile-2x.jpg");	
 	}
 }
@@ -1682,14 +1682,14 @@ img {
 	padding-right: 20px;
 
 	font-size: 24px;
-	line-height: 27px;
+	line-height: 28px;
 	font-weight: 300;
 
 	text-align: center;
 }
 
 @media (min-width: 660px) {
-	.photo-page__name {
+	.inner-page__name {
 		background-image: url("img/photo/bg-download-tablet-1x.jpg");
 		background-size: 1200px auto;
 		background-position: center -111px;
@@ -1710,13 +1710,13 @@ img {
 	   (min-width: 660px), (min-resolution: 1.5dppx) and
 	   (min-width: 660px), (min-resolution: 144dpi) and 
 	   (min-width: 660px) {
-	   .photo-page__name {
+	   .inner-page__name {
 			background-image: url("img/photo/bg-download-tablet-2x.jpg");
 	   }
 }
 
 @media (min-width: 1200px) {
-	.photo-page__name {
+	.inner-page__name {
 		background-image: url("img/photo/bg-download-desktop-1x.jpg");
 		background-size: 2560px auto;
 		background-position: center -111px;
@@ -1734,7 +1734,7 @@ img {
 	   (min-width: 1200px), (min-resolution: 1.5dppx) and 
 	   (min-width: 1200px), (min-resolution: 144dpi) and
 	   (min-width: 1200px) {
-	   	.photo-page__name {
+	   	.inner-page__name {
 			background-image: url("img/photo/bg-download-desktop-2x.jpg");
 	   }
 }
@@ -2626,3 +2626,21 @@ img {
 	}
 }
 
+
+
+/*form-page*/
+
+.form-page .name__description {
+	padding-bottom: 55px;
+}
+
+.form-promo {
+	display: block;
+	margin: 0 20px;
+
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 30px;
+
+	text-align: center;
+}
