@@ -2650,8 +2650,39 @@ img {
 	text-align: center;
 }
 
+@media (min-width: 660px) {
+	.form-page .name__description {
+		padding-bottom: 80px;
+	}
+
+	.form-promo {
+		padding: 0 55px;
+		margin-bottom: 0;
+
+		font-size: 18px;	
+	}
+
+	.form-promo--no-mobile {
+		display: block;
+		margin: 0 20px;
+		margin-bottom: 70px;
+
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 30px;
+
+		text-align: center;
+	}
+}
+
+@media (min-width: 1200px) {
+
+}
+
+/*.form*/
+
 .user-form {
-	margin-bottom: 55px;
+	margin-bottom: 85px;
 }
 
 .user-form__info {
@@ -2675,6 +2706,11 @@ img {
 	list-style: none;
 }
 
+.user-name__item,
+.user-contacts__item {
+	margin-bottom: 17px;
+}
+
 .user-name__item label,
 .user-contacts__item label {
 	display: inline-block;
@@ -2689,10 +2725,11 @@ img {
 }
 
 .user-name__item input[type="text"],
-.user-contacts__item input[type="text"]  {
+.user-contacts__item input[type="tel"],
+.user-contacts__item input[type="email"]
+  {
 	width: 100%;
 	padding: 18px 20px 21px 20px;
-	margin-bottom: 17px;
 	box-sizing: border-box;
 
 	border: 2px solid #e5e5e5;
@@ -2702,7 +2739,7 @@ img {
 }
 
 .fieldset__wrapper {
-	margin-bottom: 42px;
+	margin-bottom: 30px;
 
 	background-color: #f2f2f2; 
 }
@@ -2719,12 +2756,9 @@ img {
 	border: none;
 }
 
-.user-soft {
-	padding-bottom: 5px;
-}
-
 .user-achievements__legend,
-.user-soft__legend {
+.user-soft__legend,
+.user-contacts__legend {
 	padding: 0 20px;
 	padding-top: 38px;
 	margin-bottom: 40px;
@@ -2739,7 +2773,7 @@ img {
 }
 
 .user-soft__legend {
-	margin-bottom: 34px;
+	margin-bottom: 40px;
 }
 
 .user-achievements__list,
@@ -2752,32 +2786,30 @@ img {
 
 .user-achievements__item,
 .user-soft__item {
-	margin-bottom: 45px;
-	padding-left: 70px;
+	margin-bottom: 52px;
 
 	line-height: 30px;
 }
 
 .user-soft__item {
-	margin-bottom: 40px;
+	margin-bottom: 45px;
 }
 
-.user-achievements__item label,
-.user-soft__item label {
+.achievements-item__checkbox,
+.soft-item__radiobutton {
 	position: relative;
 
-	display: block;
-	padding-top: 5px;
+	padding-left: 70px;
 
-	cursor: pointer; 
+	cursor: pointer;
 }
 
-.user-achievements__item input + label::before {
+.achievements-item__checkbox input[type="checkbox"] + .checkbox-indicator {
 	content: "";
 	position: absolute;
 
-	left: -70px;
-	top: 0;
+	left: 0;
+	top: -2px;
 
 	width: 35px;
 	height: 35px;
@@ -2786,25 +2818,22 @@ img {
 	border: 2px solid #e5e5e5;
 }
 
-.user-achievements__item input + label:hover::before,
-.user-achievements__item input + label:focus::before,
-.app-input-radio + label:hover::before,
-.app-input-radio + label:focus::before {
-	border-color: #000;
-}
-
-.user-achievements__item input + label:checked::before,
-.app-input-radio + label:checked::before {
+.achievements-item__checkbox input[type="checkbox"]:focus + .checkbox-indicator,
+.soft-item__radiobutton input[type="radio"]:focus + .radio-indicator {
 	border-color: #d22856;
 }
 
+.achievements-item__checkbox input[type="checkbox"]:hover + .checkbox-indicator,
+.soft-item__radiobutton input[type="radio"]:hover + .radio-indicator {
+	border-color: #000;
+}
 
-.user-achievements__item input:checked + label::after {
+.achievements-item__checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
 	content: "";
 	position: absolute;
 
-	top: 10px;
-    left: -61px;
+	top: 8px;
+    left: 7px;
 
 	width: 22px;
 	height: 16px;
@@ -2812,12 +2841,12 @@ img {
 	background-image: url(img/check.svg);
 }
 
-.app-input-radio + label::before {
+.soft-item__radiobutton input[type="radio"] + .radio-indicator {
 	content: "";
 
 	position: absolute;
-	top: 0;
-	left: -70px;
+	top: -7px;
+	left: 0;
 
 	width: 35px;
 	height: 35px;
@@ -2828,12 +2857,12 @@ img {
 	border: 2px solid #e5e5e5;
 }
 
-.app-input-radio:checked + label::after {
+.soft-item__radiobutton input[type="radio"]:checked + .radio-indicator::before {
 	content: "";
 
 	position: absolute;
-	top: 13px;
-    left: -57.5px;
+	top: 10px;
+    left: 10px;
 
 	width: 14px;
 	height: 14px;
@@ -2885,10 +2914,12 @@ img {
 	display: block;
 	width: 100%;
 	padding: 15px 45px;
+	margin-bottom: 35px;
 
 	color: #fff;
 	background-color: #2aab6d;
 	border: none;
+	cursor: pointer;
 
 	font-size: 18px;
 	line-height: 30px;
@@ -2896,12 +2927,12 @@ img {
 	text-transform: uppercase;
 }
 
-.form-button:hover,
-.form-button:focus {
+.form-page__button:hover,
+.form-page__button:focus {
 	background-color: #1c9b5e;
 }
 
-.form-button:active {
+.form-page__button:active {
 	background-color: #1c9b5e;
 	color: rgba(255, 255, 255, 0.1);
 }
@@ -2920,25 +2951,158 @@ img {
 	color: #d22856;
 }
 
-.form-page input[type="radio"]:hover,
-.form-page input[type="radio"]:focus,
 .form-page input[type="text"]:hover,
-.form-page input[type="checkbox"]:hover,
-.form-page input[type="checkbox"]:focus,
+.form-page input[type="tel"]:hover,
+.form-page input[type="email"]:hover,
 .user-emotion__text:hover {
 	border-color: #000;
-	/*outline: none;*/
 }
 
-
 .form-page input[type="text"]:focus,
+.form-page input[type="tel"]:focus,
+.form-page input[type="email"]:focus,
 .user-emotion__text:focus {
 	border-color: #d22856;
 	outline: none;
 }
 
+@media (min-width: 660px) {
+	.user-form__info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.fieldset__wrapper {
+		background-color: #fff;
+	}
+
+	.user-name {
+		order: 1;
+		margin-bottom: 45px;
+	}
+
+	.user-name__item {
+		display: flex;
+		margin-bottom: 52px;
+	}
+
+	.user-name__item:last-child {
+		margin-bottom: 15px;
+	}
+
+	.user-name__item label {
+		padding-top: 20px;
+		padding-left: 0;
+		margin-bottom: 5px;
+		margin-right: 20px; 
+	}
+
+	.fieldset__wrapper--user-achievements {
+		order: 4;
+
+		margin-bottom: 58px;
+	}
+
+	.user-achievements__legend {
+		padding-top: 0;
+		margin-bottom: 47px;
+	}
+
+	.achievements-item__checkbox {
+		padding-left: 117px;
+	}
+
+	.achievements-item__checkbox input[type="checkbox"] + .checkbox-indicator {
+		left: 58px;
+    	top: -6px;
+	}
+
+	.user-contacts {
+		order: 3;
+		margin-bottom: 55px;
+	}
+
+	.user-contacts__legend {
+		padding-top: 0;
+	}
+
+	.user-contacts__item {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+
+		padding: 0 55px; 
+		margin-bottom: 25px;
+	}
+
+	.user-contacts__item label {
+		padding-top: 8px;
+	}
+
+	.fieldset__wrapper--user-soft {
+		order: 2;
+
+		margin-bottom: 70px;
+	}
+
+	.user-soft,
+	.user-contacts,
+	.user-achievements,
+	.user-emotion {
+		border: 2px solid #e5e5e5; 
+    	border-image: initial;
+	}
+
+	.user-soft__legend {
+		padding-top: 0;
+		margin-bottom: 47px;
+	}
+
+	.soft-item__radiobutton {
+		padding-left: 117px;
+	}
+
+	.soft-item__radiobutton input[type="radio"] + .radio-indicator {
+		left: 58px;
+	}
+
+	.user-emotion {
+		order: 5;
+
+		padding: 20px 60px 45px;
+		margin-bottom: 65px;
+	}
+
+	.user-emotion__legend {
+		padding: 0 20px;
+	}
+
+	.send-button__wrapper {
+		order: 6;
+
+		display: flex;
+	}
+
+	.user-form__send-button {
+		flex-basis: 48%;
+
+		margin-bottom: 0;
+	}
+
+	.user-explanation {
+		flex-basis: 40%;
+
+		text-align: right;
+
+		padding-top: 19px;
+    	margin-right: 0px;
+    	margin-left: 75px;
+	}
+}
+
+/*modal*/
+
 .modal {
-	display: none;
 	position: fixed;
 
 	background-color: #fff;
@@ -2946,17 +3110,23 @@ img {
 }
 
 .modal--fail {
+	display: none;
 	width: 100%;
 
-	top: 200px;
+	top: 30px;
 	left: 0;
+
+	z-index: 2;
 }
 
 .modal--ok {
+	display: none;
 	width: 100%;
 
-	top: 400px; 
+	top: 230px; 
 	left: 0;
+
+	z-index: 2;
 }
 
 .modal__container {
@@ -2992,4 +3162,18 @@ img {
 	background-color: #f2f2f2;
 }
 
+.modal-overlay {
+	display: none;
 
+	position: fixed;
+
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: 100%;
+
+	z-index: 1;
+
+	background-color: rgba(0, 0, 0, 0.5);
+}

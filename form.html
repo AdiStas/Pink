@@ -30,7 +30,6 @@
 		</nav>
 	</header>
 
-
 	<main class="inner-page__main">
 		<div class="inner-page__name">
 			<h1 class="name__description">Конкурс на самое безбашенное путешествие с Пинк</h1>
@@ -60,48 +59,60 @@
 						</ul>
 					</fieldset>
 
-					<div class="fieldset__wrapper">
+					<div class="fieldset__wrapper fieldset__wrapper--user-achievements">
 						<fieldset class="user-achievements">
 							<legend class="user-achievements__legend">Ваши безбашенные достижения в путешествии</legend>
 							<ul class="user-achievements__list">
 								<li class="user-achievements__item">
-									<input class="visually-hidden" type="checkbox" name="selfie" id="selfie" checked>
-									<label for="selfie">Сделал селфи с акулой</label>
+									<label class="achievements-item__checkbox" for="selfie">
+										<input class="visually-hidden" type="checkbox" name="selfie" id="selfie" checked>
+										<span class="checkbox-indicator"></span>
+									Сделал селфи с акулой</label>
 								</li>
 								<li class="user-achievements__item">
-									<input class="visually-hidden" type="checkbox" name="burnt" id="burnt" checked>
-									<label for="burnt">Обгорел на пляже</label>
+									<label class="achievements-item__checkbox" for="burnt">
+										<input class="visually-hidden" type="checkbox" name="burnt" id="burnt" checked>
+										<span class="checkbox-indicator"></span>
+									Обгорел на пляже</label>
 								</li>
 								<li class="user-achievements__item">
-									<input class="visually-hidden" type="checkbox" name="chuk" id="chuk">
-									<label for="chuk">Видел Чака Норриса</label>
+									<label class="achievements-item__checkbox" for="chuk">
+										<input class="visually-hidden" type="checkbox" name="chuk" id="chuk">
+										<span class="checkbox-indicator"></span>
+									Видел Чака Норриса</label>
 								</li>
 								<li class="user-achievements__item">
-									<input class="visually-hidden" type="checkbox" name="souvenir" id="souvenir">
-									<label for="souvenir">Накупил сувениров</label>
+									<label class="achievements-item__checkbox" for="souvenir">
+										<input class="visually-hidden" type="checkbox" name="souvenir" id="souvenir">
+										<span class="checkbox-indicator"></span>
+									Накупил сувениров</label>
 								</li>
 								<li class="user-achievements__item">
-									<input class="visually-hidden" type="checkbox" name="tower" id="tower" checked>
-									<label for="tower">Удержал башню</label>
+									<label class="achievements-item__checkbox" for="tower">
+										<input class="visually-hidden" type="checkbox" name="tower" id="tower" checked>
+										<span class="checkbox-indicator"></span>
+									Удержал башню</label>
 								</li>
 								<li class="user-achievements__item">
-									<input class="visually-hidden" type="checkbox" name="hotel" id="hotel">
-									<label for="hotel">Разгромил отель</label>
+									<label class="achievements-item__checkbox" for="hotel">
+										<input class="visually-hidden" type="checkbox" name="hotel" id="hotel">
+										<span class="checkbox-indicator"></span>
+									Разгромил отель</label>
 								</li>
 							</ul>
 						</fieldset>
 					</div>
 
 					<fieldset class="user-contacts">
-						<legend class="visually-hidden">Контактная информация</legend>
+						<legend class="user-contacts__legend no-mobile">Контактная информация</legend>
 							<ul class="user-contacts__list">
 								<li class="user-contacts__item">
 									<label for="tel">Номер телефона</label>
-									<input type="text" name="tel" id="tel" placeholder="Номер, пожалуйста">
+									<input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
 								</li>
 								<li class="user-contacts__item">
 									<label for="email">Адрес почты</label>
-									<input type="text" name="email" id="email" placeholder="Введите почту *" required>
+									<input type="email" name="email" id="email" placeholder="Введите почту *" required>
 								</li>
 							</ul>
 					</fieldset>
@@ -111,16 +122,22 @@
 							<legend class="user-soft__legend">С каким приложением путешествовали?</legend>
 							<ul class="user-soft__list">
 								<li class="user-soft__item">
-									<input class="visually-hidden app-input-radio" type="radio" name="app-group" id="ios" checked>
-									<label for="ios">Pink для IOS</label>
+									<label class="soft-item__radiobutton" for="ios">
+										<input class="visually-hidden" type="radio" name="app-type" id="ios" checked>
+										<span class="radio-indicator"></span>
+									Pink для IOS</label>
 								</li>
 								<li class="user-soft__item">
-									<input class="visually-hidden app-input-radio" type="radio" name="app-group" id="android">
-									<label for="android">Pink на Android</label>
+									<label class="soft-item__radiobutton" for="android">
+										<input class="visually-hidden" type="radio" name="app-type" id="android">
+										<span class="radio-indicator"></span>
+									Pink на Android</label>
 								</li>
 								<li class="user-soft__item">
-									<input class="visually-hidden app-input-radio" type="radio" name="app-group" id="windows">
-									<label for="windows">Windows Phone</label>
+									<label class="soft-item__radiobutton" for="windows">
+										<input class="visually-hidden" type="radio" name="app-type" id="windows">
+										<span class="radio-indicator"></span>
+									Windows Phone</label>
 								</li>
 							</ul>
 						</fieldset>
@@ -133,9 +150,9 @@
 
 					<div class="send-button__wrapper">
 						<button class="form-page__button user-form__send-button" type="submit">Отправить форму</button>
+						<p class="user-explanation"><sup>*</sup>- Обязательные поля</p>
 					</div>
 				</form>
-				<p class="user-explanation"><sup>*</sup>- Обязательные поля</p>
 			</section>
 		</div>
 	</main>	
@@ -224,7 +241,7 @@
 				<button class="form-page__button modal__close">Закрыть окно</button>
 			</div>
 	</section>
-
+		<div class="modal-overlay"></div>
 	<script src="script.js"></script>
 </body>
 </html>
