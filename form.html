@@ -6,12 +6,12 @@
 	<title>Form</title>
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
 </head>
+
 <body class="form-page">
 	<header class="page-header">
 		<nav class="main-nav main-nav--closed">
-			<a class="page-header__logo">
+			<a class="page-header__logo" href="index.html">
 				<picture>
 					<source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
 					<source media="(min-width: 660px)" srcset="img/logotype-tablet.svg">
@@ -106,11 +106,11 @@
 					<fieldset class="user-contacts">
 						<legend class="user-contacts__legend no-mobile">Контактная информация</legend>
 							<ul class="user-contacts__list">
-								<li class="user-contacts__item">
+								<li class="user-contacts__item user-contacts__item--tel">
 									<label for="tel">Номер телефона</label>
 									<input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
 								</li>
-								<li class="user-contacts__item">
+								<li class="user-contacts__item user-contacts__item--email">
 									<label for="email">Адрес почты</label>
 									<input type="email" name="email" id="email" placeholder="Введите почту *" required>
 								</li>
