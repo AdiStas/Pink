@@ -141,12 +141,18 @@ img {
 
 	cursor: pointer;
 	border: none;
+	outline: none;
 }
 
 @media (min-width: 660px) {
 	.main-nav__toggle {
 		top: 44px;
 	}
+}
+
+.main-nav__toggle::before,
+.main-nav__toggle::after {
+	transition: all .3s;
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -237,6 +243,7 @@ img {
 
 	border-top: 1px solid #485461;
 	border-bottom: 1px solid #000;
+	transition: all .5s;
 }
 
 .site-list a[href]:hover,
@@ -344,7 +351,6 @@ img {
     }
 
     .download::before {
-
 		background-image: url(img/iphone-hand-mobile-2x.png);
 		background-size: contain;
     }
@@ -376,6 +382,7 @@ img {
 
 	border: 2px solid #fff;
 	border-radius: 30px;
+	transition: all .5s;
 }
 
 .download__button:hover,
@@ -403,6 +410,10 @@ img {
 	margin-bottom: 20px;
 
 	list-style: none;
+}
+
+.download-list__item {
+	transition: all .5s;
 }
 
 .download-list__item:hover, 
@@ -777,6 +788,7 @@ img {
 		line-height: 24px;
 
 		color: #d22856;
+		text-decoration: none;
 	}
 }
 
@@ -984,6 +996,15 @@ img {
 	.features-effect__link {
 		font-size: 18px;
 		line-height: 30px;
+	}
+
+	.features-effect__link:hover,
+	.features-effect__link:focus {
+		text-decoration: underline;
+	}
+
+	.features-effect__link:active {
+		opacity: 0.3;
 	}
 }
 
@@ -1669,6 +1690,7 @@ img {
 		fill: #d22856;
 	} 
 
+
 	.footer-social__logo:active {
 		opacity: 0.3;
 	} 
@@ -1692,6 +1714,8 @@ img {
 	.footer-social__logo--htmlacademy svg {
 		width: 27px;
 		height: 34px;
+
+		transition: all .5s;
 	}
 
 	.social__link {
@@ -1704,6 +1728,7 @@ img {
 
 		border: 3px solid #eae6dd;
 		border-radius: 50%;
+		transition: all .5s;
 	}
 
 	.social__link:hover,
@@ -2432,6 +2457,7 @@ img {
 	background-color: transparent;
 	border-radius: 30px;
 	cursor: pointer;
+	transition: all .5s;
 }
 
 .photo-send__button--send {
